@@ -7,7 +7,7 @@ function App() {
   return (
     <>
     <header>
-      <h1>E V O T E C H </h1>
+      <h1>E V O T E C H 🎱 </h1>
       <NavBar/>
     </header>
     <ItemListContainer/>

@@ -53,6 +53,78 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+.contenedor-imagenes {
+  display: flex;
+  flex-direction: row;
+}
+
+.navegacion {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.navbar-nav {
+  display: flex !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+.nav-item {
+  margin-right: 20px; /* Espaciado entre los enlaces */
+}
+
+.nav-item:last-child {
+  margin-right: 0; /* Elimina el margen del último elemento */
+}
+
+.nav-item a {
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  color: inherit; /* Hereda el color del texto del elemento padre */
+}
+
+.titulo{
+  text-decoration: none;
+  color: black;
+  text-shadow: rgb(74, 116, 253)  10px 10px 10px;
+}
+
+.imagen {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px; 
+  width: 100%;
+  padding: 20px;
+  object-fit: contain;
+}
+.imgDetalle{
+    width: 400px; /* Ancho fijo para todas las imágenes */
+    height: 400px; /* Altura fija para todas las imágenes */
+    object-fit: contain; /* Asegura que la imagen se ajuste dentro del área sin cortarse */
+    display: block; /* Evita que las imágenes se muestren en línea y permite aplicar el ancho y la altura correctamente */
+    margin: auto; /* Centra las imágenes si están dentro de un contenedor más grande */
+  }
+  
+.productosIm {
+  width: 200px; /* Ancho fijo para todas las imágenes */
+  height: 200px; /* Altura fija para todas las imágenes */
+  object-fit: contain; /* Asegura que la imagen cubra el área sin distorsionarse */
+}
+.btnCaracteristicas{
+  width: 40%;
+}
+
+
+.centrado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subtitulo {
+  font-size: 1.5em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
 
 @media (prefers-color-scheme: light) {
   :root {

@@ -1,19 +1,20 @@
 import NavBar from "./components/Navbar";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
-import ItemListContainer from "./components/ItemListContainer";
+import { BrowserRouter , Link} from "react-router-dom";
 
 function App() {
   return (
-    <>
-    <header>
-      <h1>E V O T E C H 🎱 </h1>
-      <NavBar/>
-    </header>
-    <ItemListContainer/>
-    <Main/>
-    <Footer/>
-    </>
+    <BrowserRouter>
+      <header>
+        <Link to="/">
+          <h1 className=" titulo centrado"> E  V  O  T  E  C  H </h1>
+        </Link>
+        <NavBar/>
+      </header>
+      <Main/>
+      <Footer/>
+    </BrowserRouter>
   )
 }
 

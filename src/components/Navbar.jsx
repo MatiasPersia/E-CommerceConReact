@@ -1,4 +1,5 @@
 import CartWidget from "./CartWidget";
+import {NavLink } from "react-router-dom";
 
 function Navbar (){
     return(
@@ -9,24 +10,14 @@ function Navbar (){
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+        <li class="nav-item  p-2">
+          <NavLink to="/inicio">Inicio</NavLink>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://www.instagram.com/matipersia/"target="_blank">Contacto</a>
+        <li class="nav-item  p-2">
+          <NavLink to="/categoria/contacto">Contacto</NavLink>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Productos
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=Yu7LlLUR2es" target="_blank">Auriculares</a></li>
-            <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=aB52h93Bax0" target="_blank">Teclados</a></li>
-            <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=N3u6eEf65h4" target="_blank">Mouses</a></li>
-            <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=v-OXCGvD_vw" target="_blank">Monitores</a></li>
-            <li><hr class="dropdown-divider"></hr></li>
-            <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=2XXD6HcshxE" target="_blank">CPU Armadas</a></li>
-          </ul>
+        <li class="nav-item  p-2">
+          <NavLink to="/categoria/productos">Productos</NavLink>
         </li>
        <CartWidget/>
       </ul>

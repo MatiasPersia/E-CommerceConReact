@@ -2,7 +2,7 @@
 
 ## Descripción del Proyecto
 
-EVOTECH es una plataforma de comercio electrónico diseñada para ofrecer una experiencia de compra en línea fluida y eficiente. Nuestro objetivo es proporcionar a los usuarios una amplia gama de productos tecnológicos de alta calidad, con una interfaz intuitiva y fácil de usar. La plataforma permite a los usuarios navegar por diferentes categorías de productos, ver detalles específicos de cada artículo, agregar productos a su carrito y realizar compras de manera segura.
+EVOTECH es una plataforma de comercio electrónico diseñada para ofrecer una experiencia de compra en línea fluida y eficiente. Nuestro objetivo es proporcionar a los usuarios una amplia gama de productos tecnológicos de alta calidad, con una interfaz intuitiva y fácil de usar. La plataforma permite a los usuarios navegar por diferentes categorías de productos, ver detalles específicos de cada artículo, agregar productos a su carrito y realizar compras de manera segura (proximamente).
 
 ## Stack Usado
 

@@ -38,8 +38,7 @@ EVOTECH es una plataforma de comercio electrónico diseñada para ofrecer una ex
 
 2. Instala las dependencias del proyecto:
 npm install
-# o
-yarn install
+
 
 3. Configura las variables de entorno:
 Crea un archivo .env en la raíz del proyecto y añade las siguientes variables:
@@ -48,8 +47,7 @@ Crea un archivo .env en la raíz del proyecto y añade las siguientes variables:
 
 4.Inicia el servidor de desarrollo:
 npm start
-# o
-yarn start
+
 
 5. Abre tu navegador y navega a http://localhost:3000 para ver la aplicación en funcionamiento.
 
@@ -62,8 +60,7 @@ cd evotech-backend
 
 2.Instala las dependencias del backend:
 npm install
-# o
-yarn install
+
 
 3.Configura las variables de entorno para el backend: Crea un archivo .env en la raíz del proyecto backend y añade las siguientes variables:
 MONGO_URI=mongodb://localhost:27017/evotech
@@ -71,7 +68,6 @@ PORT=5000
 
 4.Inicia el servidor del backend:
 npm start
-# o
-yarn start
+
 
 Con estos pasos, deberías tener tanto el frontend como el backend de tu aplicación de e-commerce en funcionamiento. Si tienes alguna pregunta o necesitas más ayuda, ¡no dudes en contactarme!

@@ -3,27 +3,45 @@ import Productos from "./Productos";
 import { useParams } from "react-router-dom";
 import ItemListContainer from "./ItemListContainer";
 
-
 function ProductosContainer() {
   const [productos, setProductos] = useState([]);
-  const params = useParams();
+  const [selectedBrand, setSelectedBrand] = useState('');
+  const { brand } = useParams(); 
 
   useEffect(() => {
-    const url = params.id
-      ? `https://dummyjson.com/products/category/smartphones?limit=5${params.id}`
-      : 'https://dummyjson.com/products/category/smartphones?limit=15';
+    let url = 'https://dummyjson.com/products/category/smartphones';
+    if (brand) {
+      url += `&brand=${brand}`;
+    }
 
     fetch(url)
-      .then((res) => res.json())
-      .then((data) => {
+      .then(res => res.json())
+      .then(data => {
         setProductos(data.products);
-      });
-  }, [params.id]);
+      })
+      .catch(error => console.error('Error al obtener los productos:', error));
+  }, [brand]);
+
+  const handleBrandClick = (brand) => {
+    setSelectedBrand(brand);
+  };
+
+  const filteredProductos = selectedBrand
+    ? productos.filter(producto => producto.brand === selectedBrand)
+    : productos;
 
   return (
     <div>
-      <ItemListContainer/>
-      <Productos productos={productos} />
+      <div className="justify-content-center navbar navbar-expand-lg navbar-light "> 
+        <button className="nav-item bg-light" onClick={() => handleBrandClick('Apple')}>Apple</button>
+        <button className="nav-item bg-light" onClick={() => handleBrandClick('Samsung')}>Samsung</button>
+        <button className="nav-item bg-light"onClick={() => handleBrandClick('Realme')}>Realme</button>
+        <button className="nav-item bg-light" onClick={() => handleBrandClick('Oppo')}>Oppo</button>
+        <button className="nav-item bg-light" onClick={() => handleBrandClick('Vivo')}>Vivo</button>
+        <button className="nav-item bg-light" onClick={() => handleBrandClick('')}>Mostrar Todos</button>
+      </div>
+      <ItemListContainer />
+      <Productos productos={filteredProductos} />
     </div>
   );
 }

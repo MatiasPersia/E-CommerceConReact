@@ -23,7 +23,7 @@ function Navbar (){
       </ul>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Busqueda" aria-label="Search"></input>
-        <button class="btn btn-outline-success" type="submit">Buscar</button>
+        <button class="btn btn-outline-primary" type="submit">Buscar</button>
       </form>
     </div>
   </div>

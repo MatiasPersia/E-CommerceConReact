@@ -59,10 +59,6 @@ function Contacto() {
         <p>Correo Electrónico: info@evotech.com</p>
       </section>
 
-      <section className="map">
-        <h2>Ubicación</h2>
-        <div id="map" style={{ width: '100%', height: '400px', backgroundColor: '#eaeaea' }}></div>
-      </section>
     </div>
   );
 }

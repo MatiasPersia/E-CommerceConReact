@@ -5,6 +5,7 @@ import ItemDetailContainer from "./ItemDetailContainer";
 import Inicio from "./Inicio";
 import Contacto from "./Contacto"; 
 import Carrito from "./Carrito";
+import Checkout from "./Checkout";
 
 
 function Main() {
@@ -19,6 +20,7 @@ function Main() {
         <Route path="/" element={<ItemListContainer/>} />
         <Route path="/category/:id" element={<ItemListContainer/>} />
         <Route path="/item/:id" element={<ItemDetailContainer/>} />
+        <Route path="/checkout" element={<Checkout/>} />
       </Routes>
     </main>
   )

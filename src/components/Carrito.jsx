@@ -6,8 +6,9 @@ const Carrito = () => {
             <h1 className="main-title">Carrito</h1>
             <p>Precio total: $</p>
             <button className="btn btn-primary m-2">Vaciar</button>
-            <button className="btn btn-primary ">
-            <Link to="#">Finalizar compra</Link></button>
+            <button className="btn btn-warning m-2">
+            <Link to="/checkout">Finalizar pedido</Link>
+            </button>
         </div>
     )
 }

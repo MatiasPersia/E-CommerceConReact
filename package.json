@@ -14,10 +14,11 @@
     "@emotion/styled": "^11.11.5",
     "@mui/material": "^5.15.19",
     "bootstrap": "^5.3.3",
-    "firebase": "^10.12.3",
+    "firebase": "^10.12.4",
     "lucide-react": "^0.394.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.52.1",
     "react-router-dom": "^6.23.1",
     "tailwind": "^4.0.0"
   },
